@@ -1,0 +1,36 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.2, pytest-8.4.2, pluggy-1.6.0
+rootdir: /home/ryan/se3150/testing-systems-just-a-mole
+plugins: spec-5.1.0, describe-2.2.0, mock-3.15.0
+collected 15 items
+
+test_squirrel_server.py:
+
+Test squirrel server:
+
+  Delete:
+    ✓ Delete makes an empty database
+    ✓ Delete removes just one squirrel
+
+  Get:
+    ✓ Get gets empty list on fresh database
+    ✓ Get gets populated list
+    ✓ Get returns 404 on wrong url
+
+  Post:
+    ✓ Post creates squirrel on empty database
+    ✓ Post creates squirrel on populated database
+    ✓ Post returns 404 on bad request
+    ✓ Post returns 404 on bad data
+
+  Replace:
+    ✓ Replace updates squirrel
+    ✓ Replace updates squirrel on populated database
+    ✓ Replace returns 404 on bad request
+
+  Retrieve:
+    ✓ Retrieve gets squirrel
+    ✓ Retrieve gets squirrel from multiple
+    ✓ Retrieve returns 404 on invalid id
+
+============================== 15 passed in 0.27s ==============================
